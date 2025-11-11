@@ -1,7 +1,8 @@
-const app = require("./src/app");
-require("dotenv").config();
+require("dotenv").config(); // ✅ Load environment variables first!
 
+const app = require("./src/app");
 const connectToDB = require("./src/db/db.js");
+
 connectToDB();
 
 const PORT = 3000;
