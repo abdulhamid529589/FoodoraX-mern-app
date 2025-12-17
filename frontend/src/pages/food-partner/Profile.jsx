@@ -2,6 +2,7 @@ import React, { useState, useEffect, use } from 'react'
 import '../../styles/profile.css'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import img from "./mypic"
 
 const Profile = () => {
     const { id } = useParams()
@@ -22,7 +23,7 @@ const Profile = () => {
             <section className="profile-header">
                 <div className="profile-meta">
 
-                    <img className="profile-avatar" src="https://images.unsplash.com/photo-1754653099086-3bddb9346d37?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0Nnx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <img className="profile-avatar" src={img} alt="admin" />
 
                     <div className="profile-info">
                         <h1 className="profile-pill profile-business" title="Business name">
